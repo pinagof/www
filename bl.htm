@@ -1,69 +1,76 @@
 <!doctype html>
- <html>
+<html>
 <head>
-    <style>
-    @font-face {
+<style>
+@font-face {
     font-family: navidad;
-    src: url(MerryChristmasStar.ttf);
+    src: url('MerryChristmasStar.ttf');
 }
 
 @font-face {
     font-family: cnavidad;
-    src: url(Christmas\ Squad\ -\ Personal\ Use.otf);
+    src: url('Christmas Squad - Personal Use.otf');
 }
-html {
-    font-size: 16px; 
-}
+
+html { font-size: 16px; }
+
 body {
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: #F5E1C8;
+}
+
+.contenedor {
     position: relative; 
     min-height: 100vh;
 }
-.titulo{
+
+
+.titulo {
     font-family: navidad;
     font-size: 5.5rem; 
     margin: 2.5rem auto;
-    background: linear-gradient(
-        to bottom,
-        green 0%,
-        #896b49 70%,
-        #6d4c41 110%
-    );
-    text-shadow: 0.625rem 0.625rem 0.75rem rgba(200, 50, 50, 0.3); 
+    background: linear-gradient(to bottom, green 0%, #896b49 70%, #6d4c41 100%);
+    text-shadow: 0.625rem 0.625rem 0.75rem rgba(200, 50, 50, 0.3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.sub{
+
+.sub {
     font-family: navidad;
-    font-size: 4.5rem; 
+    font-size: 4.5rem;
     margin: 1.5rem auto;
-    background: linear-gradient(
-        to bottom,
-        #FFD700 0%,
-        #C0C0C0 70%,
-        #FFFFFF 110%
-    );
+    background: linear-gradient(to bottom, #FFD700 0%, #C0C0C0 70%, #FFFFFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.actividades {
+    font-family: cnavidad;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
 .botb {
-    width: 12rem; 
-    height: 12rem; 
+    width: 20rem; 
+    height: 20rem; 
     background-image: url('libro.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin: 2rem auto;
 }
+
+
 .bl2, .bl3 {
     position: absolute;
-    bottom: 0; 
-    width: 15rem; 
+    bottom: 0;
+    width: 25rem; 
     height: auto;
 }
+
 .bl2 {
     right: 0;
     background-image: url('decor1.png');
@@ -79,23 +86,18 @@ body {
 }
 </style>
 </head>
-    
-
 <body>
-    <div class="titulo">Fiesta de Navidad IES Elaios</div>
+    <div class="contenedor">
+        <div class="titulo">Fiesta de Navidad IES Elaios</div>
         <div class="sub">Biblioteca</div>
-   
-    <div class="actividades">
-        <div>Club de Lectura 11:30-12:30</div>
+
+        <div class="actividades">
+            <div>Club de Lectura 11:30-12:30</div>
+        </div>
+
+        <div class="botb"></div>
+        <div class="bl2"></div>
+        <div class="bl3"></div>
     </div>
-<div class="botb"></div>
-<div class="bl2"></div>
-<div class="bl3"></div>
-<div class="returnt"></div>
 </body>
-
-
-
-
-
 </html>
