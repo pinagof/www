@@ -1,155 +1,159 @@
-
 <!doctype html>
-<html>
+<html lang="es">
 <head>
+<meta charset="utf-8">
+<title>Programación Fiesta de Navidad</title>
+
 <style>
-    @font-face{
-            font-family: navidad;
-            src:url(MerryChristmasStar.ttf)
-}
-    @font-face {
-        font-family:cnavidad ;
-        src: url(Christmas\ Squad\ -\ Personal\ Use.otf);
-    }
-    @font-face {
-        font-family: snavidad;
-        src: url(Santa\ Natale\ PERSONAL\ USE\ ONLY!.ttf);
-    }
-body{
-        text-align: center;
-        background-color:#d5cbc9;
+
+@font-face {
+    font-family: navidad;
+    src: url(MerryChristmasStar.ttf);
 }
 
-    .titulo{
+@font-face {
+    font-family: cnavidad;
+    src: url(Christmas\ Squad\ -\ Personal\ Use.otf);
+}
 
-    
-            font-family: navidad;
-            font-size: 600%;
-             display: inline-block; 
-              background: linear-gradient(to bottom,
+
+html {
+    font-size: 16px; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #d5cbc9;
+}
+
+
+    font-family: navidad;
+    font-size: 5.5rem; 
+    margin: 2.5rem auto;
+    background: linear-gradient(
+        to bottom,
         green 0%,
         #896b49 70%,
-        #6d4c41 110%);
-        text-shadow: 10px 10px 12px rgba(200, 50, 50, 0.3);
-           
-
+        #6d4c41 110%
+    );
+    text-shadow: 0.625rem 0.625rem 0.75rem rgba(200, 50, 50, 0.3); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    background-clip: text;
-    color: transparent;
-
-     display: block;
-    margin: 0 auto;
 }
+
+
 .lugares {
     font-family: cnavidad;
-    font-size: 150%;
-    column-count: 2;           
-    column-gap: 360px;         
-    width: 35%;                
-    margin: 0 auto;           
-    text-align: left;          
+    font-size: 1.6rem; 
+    display: flex;
+    justify-content: center;
+    gap: 7.5rem;
+    margin-top: 3.75rem; 
 }
 
-.lugares div {
-    margin-bottom: 165px;      
+
+.columna1,
+.columna2 {
+    display: flex;
+    flex-direction: column;
+    width: 21.875rem; 
 }
-      .columna1{
-        display: flex;
-        text-align: left;
+
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem; 
+    margin-bottom: 2.5rem;
+}
+
+
+.boton {
+    width: 3.75rem; 
+    height: 3.75rem; 
+    background-image: url(regalo2-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.boton:hover {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+
+@media (max-width: 56.25rem) { 
+    .lugares {
         flex-direction: column;
-        letter-spacing: 0px;   
-        width: 350px;
-}      
-.columna2{
-        display: flex;
-        text-align: left;
-        flex-direction: column;
-        letter-spacing: 0px;   
-        width: 350px; 
-}      
-.bot-hall{
-        position: absolute;
-        left: 600px;
-        top: 165px;
-        width: 100px;
-        height: 500px;
-        background-image:url(regalo2-removebg-preview.png);
-        background-size: contain;
-        background-repeat: no-repeat;
+        align-items: center;
+        gap: 3.75rem; 
+    }
 
+    .titulo {
+        font-size: 4rem; 
+    }
 }
-.bot-bl{
-        position: absolute;
-        left: 610px;
-        top: 345px;
-        width: 100px;
-        height: 500px;
-        background-image:url(regalo2-removebg-preview.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-}
-.bot-ad{
-        position: absolute;
-        left: 630px;
-        top: 525px;
-        width: 100px;
-        height: 500px;
-        background-image:url(regalo2-removebg-preview.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-}
-.bot-am{
-        position: absolute;
-        left: 645px;
-        top: 715px;
-        width: 100px;
-        height: 500px;
-        background-image:url(regalo2-removebg-preview.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-}
-
-
-
-
 </style>
-    
-<title> PROGRAMACIÓN FIESTA NAVIDAD </title>
-
 </head>
+
 <body>
-    
+
 <div class="titulo">
-     Fiesta de Navidad ies Elaios 
-     </div>
+    Fiesta de Navidad IES Elaios
+</div>
 
-  <div class="lugares">
-    <div class="columna1">
-        <div>Hall</div>
-        <div class="bot-hall" onclick="location.href='hall.htm';"></div>
-        <div>Biblioteca</div>
-        <div class="bot-bl" onclick="location.href='bl.htm';"></div>
-        <div>Aula de Dibujo</div>
-        <div class="bot-ad" onclick="location.href='ad.htm';"></div>
-        <div>Aula de Música</div>
-        <div class="bot-am" onclick="location.href='am.htm';"></div>
-    </div>
-    <div class="columna2">
-        <div>TIC - 1</div>
-        <div>TIC - 2</div>
-        
-        <div>Aula 1ºESO C</div>
-        
-        <div>Pista de Fútbol Sala</div>
-        
-    </div>
-        
-  </div>  
-
+<div class="lugares">
 
     
-</body>
+    <div class="columna1">
+        <div class="item">
+            <div class="boton" onclick="location.href='hall.htm'"></div>
+            <div>Hall</div>
+        </div>
 
+        <div class="item">
+            <div class="boton" onclick="location.href='bl.htm'"></div>
+            <div>Biblioteca</div>
+        </div>
+
+        <div class="item">
+            <div class="boton" onclick="location.href='ad.htm'"></div>
+            <div>Aula de Dibujo</div>
+        </div>
+
+        <div class="item">
+            <div class="boton" onclick="location.href='am.htm'"></div>
+            <div>Aula de Música</div>
+        </div>
+    </div>
+
+    
+    <div class="columna2">
+        <div class="item">
+            <div class="boton" onclick="location.href='tic1.htm'"></div>
+            <div>TIC - 1</div>
+        </div>
+
+        <div class="item">
+            <div class="boton" onclick="location.href='tic2.htm'"></div>
+            <div>TIC - 2</div>
+        </div>
+
+        <div class="item">
+            <div class="boton" onclick="location.href='aula1c.htm'"></div>
+            <div>Aula 1º ESO C</div>
+        </div>
+
+        <div class="item">
+            <div class="boton" onclick="location.href='pistafutbol.htm'"></div>
+            <div>Pista de Fútbol Sala</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
 </html>
