@@ -19,6 +19,8 @@ body {
     padding: 0;
     text-align: center;
     background-color: #F5E1C8;
+    position: relative; 
+    min-height: 100vh;
 }
 .titulo{
     font-family: navidad;
@@ -34,29 +36,33 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.botb{
-    width: 8rem; 
-    height: 8rem; 
-    background-image: url(libro.png);
+.botb {
+    width: 12rem; 
+    height: 12rem; 
+    background-image: url('libro.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin: 2rem auto;
 }
-.bl2{
-    width: 8rem; 
-    height: 8rem; 
-    background-image: url(decor1.png);
+.bl2, .bl3 {
+    position: absolute;
+    bottom: 0; 
+    width: 15rem; 
+    height: auto;
+}
+.bl2 {
+    right: 0;
+    background-image: url('decor1.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right center;
 }
-.bl3{
-    width: 8rem; 
-    height: 8rem; 
-    background-image: url(decor2.png);
+
+.bl3 {
+    left: 0;
+    background-image: url('decor2.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left center;
 }
 </style>
 </head>
