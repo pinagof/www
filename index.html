@@ -5,151 +5,135 @@
 <title>Programación Fiesta de Navidad</title>
 <style>
 @font-face{
-        font-family: navidad;
-        src: url(MerryChristmasStar.ttf);
-}
-
-@font-face{
-        font-family: cnavidad;
-        src: url(Christmas\ Squad\ -\ Personal\ Use.otf);
-}
-
+		font-family:navidad;
+		src:url(MerryChristmasStar.ttf);
+	}
+ @font-face{
+		font-family:cnavidad;
+		src:url(Christmas\ Squad\ -\ Personal\ Use.otf);
+	}
 
 html{
         font-size: 16px; 
-}
+    }
 
 body{
         margin: 0;
         padding: 0;
         text-align: center;
         background-color: #F5E1C8;
-}
+    }
 
 .titulo{
-        font-family: navidad;
-        font-size: 5.5rem; 
-        margin: 2.5rem auto;
-        background: linear-gradient(
+        font-family:navidad;
+        font-size:5.5rem; 
+        margin:2.5rem auto;
+        background:linear-gradient(
         to bottom,
         green 0%,
         #896b49 70%,
         #6d4c41 110%
     );
-        text-shadow: 0.625rem 0.625rem 0.75rem rgba(200, 50, 50, 0.3); 
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-}
+    text-shadow: 0.625rem 0.625rem 0.75rem rgba(200, 50, 50, 0.3); 
+    -webkit-background-clip: text;
+    webkit-text-fill-color: transparent;
+    }
 
 
 .lugares{
-        font-family: cnavidad;
-        font-size: 1.6rem; 
-        display: flex;
-        justify-content: center;
-        gap: 7.5rem;
-        margin-top: 3.75rem; 
-}
+        font-family:cnavidad;
+        font-size:1.6rem; 
+        display:flex;
+        justify-content:center;
+        gap:7.5rem;
+        margin-top:3.75rem; 
+    }
 
 
 .columna1,
 .columna2{
-        display: flex;
-        flex-direction: column;
+        display:flex;
+        flex-direction:column;
         width: 21.875rem; 
-}
+    }
 
 
 .item{
-        display: flex;
-        align-items: center;
-        gap: 1.25rem; 
-        margin-bottom: 2.5rem;
-}
+        display:flex;
+        align-items:center;
+        gap:1.25rem; 
+        margin-bottom:2.5rem;
+    }
 
 
 .boton{
-        width: 8rem; 
-        height: 8rem; 
-        background-image: url(regalo2.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        cursor: pointer;
+        width:8rem; 
+        height:8rem; 
+        background-image:url(regalo2.png);
+        background-size:contain;
+        background-repeat:no-repeat;
+        cursor:pointer;
         transition: transform 0.3s ease;
-}
+    }
 
-.boton:hover {
-    transform: scale(1.15) rotate(-5deg);
-}
+.boton:hover {transform: scale(1.15) rotate(-5deg);}
 
 
 @media (max-width: 56.25rem) { 
-    .lugares {
-        flex-direction: column;
-        align-items: center;
-        gap: 3.75rem; 
-    }
+        .lugares {
+            flex-direction:column;
+            align-items:center;
+            gap:3.75rem; 
+        }
 
-    .titulo {
+        .titulo {
         font-size: 4rem; 
+        }
     }
-}
 </style>
 </head>
+
 <body>
-<div class="titulo">
-    012345678Fiesta de Navidad IES Elaios012345678
-</div>
-
+<div class="titulo">012345678Fiesta de Navidad IES Elaios012345678</div>
 <div class="lugares">
-
-    
     <div class="columna1">
         <div class="item">
             <div class="boton" onclick="location.href='hall.htm'"></div>
             <div>Hall</div>
-        </div>
-
+    </div>
         <div class="item">
             <div class="boton" onclick="location.href='bl.htm'"></div>
             <div>Biblioteca</div>
-        </div>
-
+    </div>
         <div class="item">
             <div class="boton" onclick="location.href='ad.htm'"></div>
             <div>Aula de Dibujo</div>
-        </div>
-
+    </div>
         <div class="item">
             <div class="boton" onclick="location.href='am.htm'"></div>
             <div>Aula de Música</div>
-        </div>
     </div>
+</div>
 
     
     <div class="columna2">
         <div class="item">
             <div class="boton" onclick="location.href='t.htm'"></div>
             <div>TIC - 1</div>
-        </div>
-
+    </div>
         <div class="item">
             <div class="boton" onclick="location.href='tc.htm'"></div>
             <div>TIC - 2</div>
-        </div>
-
+    </div>
         <div class="item">
             <div class="boton" onclick="location.href='ac.htm'"></div>
             <div>Aula 1º ESO C</div>
-        </div>
-
+    </div>
         <div class="item">
             <div class="boton" onclick="location.href='pf.htm'"></div>
             <div>Pista de Fútbol Sala</div>
-        </div>
     </div>
-
 </div>
-
+</div>
 </body>
 </html>
