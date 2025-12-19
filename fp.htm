@@ -45,7 +45,7 @@ body{
   position:absolute;
   left:30%;
   top:30%;
-  display: inline-grid;
+  display: grid;
    row-gap: 10px;
   column-gap: 20px;
   grid-template-columns: 1fr 1fr;
@@ -67,6 +67,7 @@ body{
         border-width:1px;
         background-image:url(regalo2-removebg-preview.png);
         background-repeat: no-repeat;
+        background-size: 200px;
 
 }
 .bot-bl{
@@ -76,16 +77,25 @@ body{
         border-width:1px;
         background-image:url(regalo2-removebg-preview.png);
         background-repeat: no-repeat;
+                background-size: 200px;
 }
 .bot-ad{
-
+       height:300px;
+        border-style:solid;
+        border-color:green;
+        border-width:1px;
         background-image:url(regalo2-removebg-preview.png);
         background-repeat: no-repeat;
+                background-size: 200px;
 }
 .bot-am{
-
+       height:300px;
+        border-style:solid;
+        border-color:green;
+        border-width:1px;
         background-image:url(regalo2-removebg-preview.png);
         background-repeat: no-repeat;
+                background-size: 200px;
 }
 
 
@@ -104,14 +114,10 @@ body{
 
   <div class="lugares">
     <div class="columna1">
-        <div>Hall</div>
-        <div class="bot-hall" onclick="location.href='hall.htm';"></div>
-        <div>Biblioteca</div>
-        <div class="bot-bl" onclick="location.href='bl.htm';"></div>
-        <div>Aula de Dibujo</div>
-        <div class="bot-ad" onclick="location.href='ad.htm';"></div>
-        <div>Aula de Música</div>
-        <div class="bot-am" onclick="location.href='am.htm';"></div>
+        <div class="bot-hall" onclick="location.href='hall.htm';">Hall</div>
+        <div class="bot-bl" onclick="location.href='bl.htm';">Biblioteca</div>
+        <div class="bot-ad" onclick="location.href='ad.htm';">Aula de dibujo</div>
+        <div class="bot-am" onclick="location.href='am.htm';">Aula de Música</div>
     </div>
     <div class="columna2">
         <div>TIC - 1</div>
